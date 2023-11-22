@@ -1,0 +1,19 @@
+The model generates patches with a random state variable. 
+
+The patches can be clustered at initialisation based on the clustering-degree parameter:
+
+- 0 --> no clustering
+- 4 --> highest degree of clustering
+
+The patches can be coloured based on:
+
+- state
+	- green represents higher values
+- hotspot
+	- red: high/high
+	- blue: low/low
+	- white: insignificant
+- local Moran's I
+	- red represents higher values
+
+The hotspot calculations are based on: https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/h-how-hot-spot-analysis-getis-ord-gi-spatial-stati.htm
